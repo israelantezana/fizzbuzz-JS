@@ -1,4 +1,4 @@
-function fizzbuzz(n) {
+function deUnNumero(n) {
   let fb = "";
   if (n % 3 === 0 && n % 5 === 0) {
     fb = "FizzBuzz";
@@ -16,13 +16,13 @@ function fizzbuzz(n) {
   return fb;
 }
 
-function fizzbuzzHasta(n) {
+function fizzbuzz(n) {
   let aux = "";
   for (let i = 1; i <= n; i++) {
-    aux += fizzbuzz(i);
+    aux += deUnNumero(i);
     if (i != n) aux += ", ";
   }
   return aux;
 }
 
-export { fizzbuzz, fizzbuzzHasta };
+export { deUnNumero, fizzbuzz };
